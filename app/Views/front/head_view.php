@@ -8,8 +8,9 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<header>
+<header class="header-custom text-center">
     <h1>Bienvenido a nuestra pagina principal</h1>
 </header>
+
 
 <body>
