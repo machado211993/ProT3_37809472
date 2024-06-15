@@ -25,7 +25,19 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="principal">Principal</a>
                 </li>
+
             </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Perfil
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="registro">Registrarse</a></li>
+                    <li><a class="dropdown-item" href="login">Login</a></li>
+                    <li><a class="dropdown-item" href="principal">Principal</a></li>
+                </ul>
+            </div>
+            
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>

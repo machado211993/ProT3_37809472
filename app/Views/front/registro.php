@@ -11,16 +11,16 @@
             <input type="text" class="form-control" id="apellido" required>
         </div>
         <div class="mb-3">
-            <label for="email" class="form-label">Correo Electrónico</label>
+            <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" required>
         </div>
         <div class="mb-3">
-            <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password" required>
+            <label for="password" class="form-label">Usuario</label>
+            <input type="password" class="form-control" id="usuario" required>
         </div>
         <div class="mb-3">
-            <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
-            <input type="password" class="form-control" id="confirmPassword" required>
+            <label for="confirmPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
         </div>
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="terminos" required>

@@ -41,6 +41,12 @@ class Home extends BaseController
         echo view('front/login');
         echo view('front/footer_view');
     }
+    public function detalle(){
+        echo view('front/head_view');
+        echo view('front/navbar_view');
+        echo view('front/detalle');
+        echo view('front/footer_view');
+    }
 
 
 }
