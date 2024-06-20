@@ -6,16 +6,14 @@
     <div class="col-md-6">
       <h3>Nuestra Historia</h3>
       <p>
-        Somos una empresa dedicada a ofrecer los mejores servicios de tecnología. Desde nuestros inicios en 2005, hemos crecido exponencialmente y nos hemos establecido como líderes en la industria. Nuestro objetivo es proporcionar soluciones innovadoras que satisfagan las necesidades de nuestros clientes.
+        Las Marías comenzó como una estancia en Corrientes en 1924 dedicada al cultivo de yerba mate. En 1950 se agregó la producción de té. A lo largo de tres generaciones, se transformó en una empresa líder en infusiones a nivel mundial y la mayor productora de yerba mate.
       </p>
     </div>
     <div class="col-md-6">
       <h3>Visión y Misión</h3>
+
       <p>
-        <strong>Visión:</strong> Ser la empresa líder en tecnología, reconocida por su innovación y excelencia en el servicio al cliente.
-      </p>
-      <p>
-        <strong>Misión:</strong> Proporcionar soluciones tecnológicas de alta calidad que mejoren la vida de nuestros clientes y contribuyan al progreso de la sociedad.
+        El objetivo es promover una alimentación saludable basada en lo crudo y lo natural. El documento resume la historia de Establecimiento Las Marías S.A., desde sus orígenes en tiempos prehispánicos cuando los guaraníes ocupaban la tierra, hasta su establecimiento como empresa en 1912
       </p>
     </div>
   </div>
@@ -23,7 +21,7 @@
     <div class="col-md-4">
       <h3>Nuestros Valores</h3>
       <ul>
-        <li>Innovación</li>
+
         <li>Compromiso</li>
         <li>Excelencia</li>
         <li>Integridad</li>

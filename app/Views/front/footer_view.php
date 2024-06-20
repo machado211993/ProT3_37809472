@@ -1,12 +1,7 @@
 <!-- Footer -->
 <footer class="bg-dark text-center text-white mt-5">
     <div class="container p-4">
-        <!-- Section: Text -->
-        <section class="mb-4">
-            <p>
-                Aquí puedes usar filas y columnas para organizar el contenido de tu footer. Agrega información relevante, enlaces útiles o cualquier otra cosa que desees incluir.
-            </p>
-        </section>
+       <h5>Redes Sociales</h5>
     </div>
     <!-- Section: Redes sociales -->
     <section class="mb-4">
