@@ -36,7 +36,7 @@ class Home extends BaseController
         $data['titulo'] = 'registro';
         echo view('front/head_view', $data);
         echo view('front/navbar_view');
-        echo view('back/usuario/registro');
+        echo view('back/registro');
         echo view('front/footer_view');
     }
 
@@ -45,7 +45,7 @@ class Home extends BaseController
         $data['titulo'] = 'login';
         echo view('front/head_view', $data);
         echo view('front/navbar_view');
-        echo view('back/usuario/login');
+        echo view('back/login');
         echo view('front/footer_view');
     }
     public function detalle()

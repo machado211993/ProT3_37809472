@@ -2,19 +2,20 @@
 
 namespace App\Controllers;
 
-use App\Models\usuario_Model;
 use CodeIgniter\Controller;
+use App\Models\Usuario_Model;
 
-class login_controller extends BaseController
+class Login_controller extends BaseController
 {
 
     public function index()
     {
         helper(['form', 'url']);
-        $data['titulo'] = 'login';
+        $data['titulo'] = 'Login';
         echo view('front/head_view', $data);
         echo view('front/navbar_view');
-        echo view('back/usuario/login');
+        echo view('front/principal_ultimo');
+        echo view('back/login');
         echo view('front/footer_view');
     }
 
@@ -22,7 +23,8 @@ class login_controller extends BaseController
     {
         $session = session();
         $model = new usuario_Model();
-        //traemos los datos del formulario
+
+        // Traemos los datos del formulario
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('pass');
 
@@ -30,11 +32,16 @@ class login_controller extends BaseController
         if ($data) {
             $pass = $data['pass'];
             $ba = $data['baja'];
+
+            // Verificar si el usuario está dado de baja
             if ($ba == 'SI') {
-                $session->setFlashdata('msg', 'usuario dado de baja');
+                $session->setFlashdata('msg', 'Usuario dado de baja');
                 return redirect()->to('/login_controller');
             }
+
+            // Verificar la contraseña
             $verify_pass = password_verify($password, $pass);
+
             if ($verify_pass) {
                 $ses_data = [
                     'id_usuario' => $data['id_usuario'],
@@ -45,18 +52,24 @@ class login_controller extends BaseController
                     'perfil_id' => $data['perfil_id'],
                     'logged_in' => TRUE
                 ];
+
+                // Iniciar sesión
                 $session->set($ses_data);
-                session()->setFlashdata('msg', 'Bienvenido!!');
-                return redirect()->to('/panel');
+
+                $session->setFlashdata('msg', '¡Bienvenido!');
+                return redirect()->to('/panel'); 
             } else {
-                $session->setFlashdata('msg', 'password incorrecta');
-                return redirect()->to('/login_controller');
+                // Contraseña incorrecta
+                $session->setFlashdata('msg', 'Contraseña incorrecta');
+                return redirect()->to('/login');
             }
         } else {
-            $session->setFlashdata('msg', 'no existe el email o es incorrecto');
-            return redirect()->to('/login_controller');
+            // Email no encontrado
+            $session->setFlashdata('msg', 'No existe el email o es incorrecto');
+            return redirect()->to('/login');
         }
     }
+
     public function logout()
     {
         $session = session();
